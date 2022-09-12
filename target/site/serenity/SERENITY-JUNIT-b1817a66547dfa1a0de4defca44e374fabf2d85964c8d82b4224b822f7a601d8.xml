@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Passengers only" skipped="0" tests="5" time="46.5" timestamp="2022-09-10 08:02:34"><testcase name="check minimun number of passenger"/><testcase name="enter to volotea.com page and check the maximun babys for passenger"/></testsuite>
