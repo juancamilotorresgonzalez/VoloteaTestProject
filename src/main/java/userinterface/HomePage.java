@@ -13,7 +13,7 @@ public class HomePage extends PageObject {
 
     public static final Target ENTER_COOKIES = Target
             .the("push the passenger button by cookies")
-            .located(By.id("onetrust-accept-btn-handler"));
+            .located(By.id("#onetrust-accept-btn-handler"));
 
 
     //public static final Target ENTER_PASSAGE = Target
@@ -22,11 +22,11 @@ public class HomePage extends PageObject {
 
     public static final Target INPUT_ORIGIN =Target
             .the("where the search is done")
-            .located(By.id("input-text_sf-origin"));
+            .located(By.id("#origin"));
 
     public static final Target SELECT_DESTINY =Target
             .the("select the destiny")
-            .located(By.xpath("//input[@id='destination']"));
+            .located(By.id("#destination"));
 
 
 

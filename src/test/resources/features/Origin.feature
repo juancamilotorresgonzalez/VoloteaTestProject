@@ -11,7 +11,7 @@ Feature: Enter-Origin Destiny
     Then verify the trip selected origin ,destiny
 
    Examples:
-     | origin   | destiny    |
-     | "Madrid" | "Barcelona |
-     | "Mad"    | "Bcn"      |
-
+     | origin   | destiny   |
+     | Madrid   | Barcelona |
+     | Mad      | Bcn       |
+     | Valencia | Bilbao"   |

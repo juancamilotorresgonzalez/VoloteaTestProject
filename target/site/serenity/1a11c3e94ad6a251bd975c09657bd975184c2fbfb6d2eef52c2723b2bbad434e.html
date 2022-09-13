@@ -100,7 +100,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-09-2022 10:46</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-09-2022 16:16</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -133,9 +133,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                <span class="error-color">
+                                <span class="failing-color">
                                     select new flight
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -193,9 +193,44 @@
 
     <div class="clr"></div>
 
+    <div class="story-title">
+        <h3 class="story-header">Scenario Outline</h3>
+
+        <div class="scenario">Given enter to volotea flights<br>And accept cookies and select the button origin<br>When find a new origin &lt;origin&gt;, &lt;destiny&gt;<br>Then verify the minimun passengers</div>
+
+    </div>
 
     <div id="beforetable"></div>
 
+
+        <h3 class="story-header">Examples:&nbsp;</h3>
+
+
+        <p class="example-tag">
+        </p>
+
+        <div class="example-table test-report">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                        <th>Origin</th>
+                        <th>Destiny</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="test-FAILURE"><a href="#0">1</a></td>
+                            <td class="test-FAILURE"><a
+                                    href="#0">Madrid</a>
+                            </td>
+                            <td class="test-FAILURE"><a
+                                    href="#0">Barcelona</a>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
     <div id="tablecontents">
         <div>
@@ -214,12 +249,12 @@
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0 failure-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -228,9 +263,32 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                             <span class="top-level-step">
-                                Given enter to volotea flights
+                                Example #1: {origin=Madrid, destiny=Barcelona}
                             </span>
                             </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="FAILURE-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">48.09s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">
+                                Given enter to volotea flights
+                            </span>
 
                         </div>
                     </td>
@@ -243,17 +301,13 @@
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">30.73s</span></td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">40.02s</span></td>
                 </tr>
-                    <tr>
-                    <td colspan="5">
-                    <table id="stepSection0" style="display:none; width:100%">
-
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
-                            <span style="margin-left: 40px; margin-right: 5px;"
+                            <span style="margin-left: 60px; margin-right: 5px;"
                                   class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
@@ -274,21 +328,18 @@
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">29.58s</span></td>
+                    <td width="100"><span class="nested-group-step">38.57s</span></td>
                 </tr>
 
-                    </table>
-                    </td>
-                    <tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="1"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">
+                            <span class="nested-group-step">
                                 And accept cookies and select the button origin
                             </span>
 
@@ -303,30 +354,24 @@
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.34s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.36s</span></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-FAILURE">
                     <td width="60" class="step-icon">
-                        <a name="2"/>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
-                               style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection2 error-icon"
-                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
-                            </a>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
-                               style="display:block;">
-                            <span class="top-level-step">
-                                When find a new origin &lt;Madrid&gt;, &lt;Barcelona&gt;
+                            <span class="nested-step">
+                                When find a new origin Madrid, Barcelona
                             </span>
-                            </a>
 
                         </div>
                     </td>
-                        <td width="100" class="ERROR-text">
+                        <td width="100" class="FAILURE-text">
                                 <a href="1a11c3e94ad6a251bd975c09657bd975184c2fbfb6d2eef52c2723b2bbad434e_screenshots.html#screenshots?screenshot=3">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="079779dd6fcc2677dfd8da0cf726373b833c027678264ef5ab354c051c6dba72.png"
@@ -335,18 +380,14 @@
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">2.08s</span></td>
+                    <td width="100"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">7.67s</span></td>
                 </tr>
-                    <tr>
-                    <td colspan="5">
-                    <table id="stepSection2" style="display:none; width:100%">
-
-                <tr class="test-ERROR">
+                <tr class="test-FAILURE">
                     <td width="60" class="step-icon">
                         
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -356,19 +397,19 @@
 
                         </div>
                     </td>
-                        <td width="100" class="ERROR-text">
+                        <td width="100" class="FAILURE-text">
                                 <a href="1a11c3e94ad6a251bd975c09657bd975184c2fbfb6d2eef52c2723b2bbad434e_screenshots.html#screenshots?screenshot=4">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="079779dd6fcc2677dfd8da0cf726373b833c027678264ef5ab354c051c6dba72.png"
-                                         href="079779dd6fcc2677dfd8da0cf726373b833c027678264ef5ab354c051c6dba72.png"
+                                    <img src="459152e10aa7252abe12f1130b66521eade392d43bfb2cb0510460e3e5a32e46.png"
+                                         href="459152e10aa7252abe12f1130b66521eade392d43bfb2cb0510460e3e5a32e46.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="nested-group-step">ERROR</span></td>
-                    <td width="100"><span class="nested-group-step">1.87s</span></td>
+                    <td width="100"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">7.43s</span></td>
                 </tr>
-                    <tr class="test-ERROR">
+                    <tr class="test-FAILURE">
                         <td width="40">&nbsp</td>
                         <td width="%" colspan="4" class="error-message-cell">
 
@@ -377,10 +418,10 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element click intercepted exception: element click intercepted: Element &lt;input type=&quot;text&quot; id=&quot;input-text_sf-origin&quot; readonly=&quot;&quot; class=&quot;v7-sf__input&quot; placeholder=&quot;You are travelling from:&quot;&gt; is not clickable at point (381, 279). Other element would receive the click: &lt;div class=&quot;onetrust-pc-dark-filter ot-fade-in&quot; style=&quot;z-index:2147483645;&quot;&gt;&lt;/div&gt;</span>
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
                 </div>
                 <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-5""
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-6""
                        role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
                 </div>
              </div>
@@ -390,16 +431,23 @@
     <!-- Details Section -->
     <div class="row stacktrace-details">
       <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-5">
+        <div class="collapse multi-collapse" id="stacktraceModal-6">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.ElementClickInterceptedException </h4>
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
                 </div>
                 <div class="card-body">
                     <div>
                         <pre>com.volotea.qa.StepDefinitions.SelectNewFlightDefinitions.findANewOrigin(SelectNewFlightDefinitions.java:40)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
                     </div>
 
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.id: #origin to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>com.volotea.qa.StepDefinitions.SelectNewFlightDefinitions.findANewOrigin(SelectNewFlightDefinitions.java :40)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -407,18 +455,15 @@
                     </td>
                     </tr>
 
-                    </table>
-                    </td>
-                    <tr>
                 <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
-                        <a name="3"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">
+                            <span class="nested-group-step">
                                 Then verify the minimun passengers
                             </span>
 
@@ -426,13 +471,17 @@
                     </td>
                         <td width="100" class="SKIPPED-text">
                         </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-ERROR">
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-FAILURE">
                     <td colspan="3"></td>
-                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>34.14s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>FAILURE</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>49.3s</em></span></td>
                 </tr>
 
             </table>

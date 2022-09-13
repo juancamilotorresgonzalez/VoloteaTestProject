@@ -1,6 +1,7 @@
 package task;
 
 
+import models.OriginDestiny;
 import net.serenitybdd.screenplay.Actor;
 
 import net.serenitybdd.screenplay.Task;
@@ -16,28 +17,26 @@ import static userinterface.HomePage.*;
 
 public class FindFlight implements Task {
 
-    private String origin;
-    private String destiny;
+    private OriginDestiny OriginDestiny;
 
 
-    public FindFlight(String origin, String destiny ){
-        this.origin = origin;
-        this.destiny = destiny;
+
+    public FindFlight(OriginDestiny origindestiny ){
+        this.OriginDestiny = OriginDestiny;
+
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        if(Visibility.of(ENTER_COOKIES).viewedBy(actor).asBoolean())
-            actor.attemptsTo(Click.on(ENTER_COOKIES));
-      actor.attemptsTo(
-              Enter.theValue(origin).into(INPUT_ORIGIN),
-              SelectFromOptions.byVisibleText(destiny).from(SELECT_DESTINY),
-              Hit.the(Keys.ENTER).into(INPUT_ORIGIN),
-              Click.on(BUTTON_FIND.of(origin))
-      );
+        actor.attemptsTo(Click.on(ENTER_COOKIES));
+        actor.attemptsTo(Click.on(INPUT_ORIGIN));
+        actor.attemptsTo(Enter.theValue(OriginDestiny.getOrigin()).into(INPUT_ORIGIN));
+        actor.attemptsTo(Click.on(SELECT_DESTINY));
+        actor.attemptsTo(Enter.theValue(OriginDestiny.getDestiny()).into(SELECT_DESTINY));
+
     }
 
-    public static FindFlight conOrigin(String origin, String destiny) {
-        return instrumented(FindFlight.class, origin, destiny);
+    public static FindFlight withData(OriginDestiny OrginDestiny) {
+        return new FindFlight(OriginDestiny);
     }
 }

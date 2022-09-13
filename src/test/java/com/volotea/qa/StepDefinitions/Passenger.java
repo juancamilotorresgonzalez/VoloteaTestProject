@@ -32,15 +32,15 @@ public class Passenger {
     }
 
     @When("^the user select number of passengers  (\\d+) (\\d+)$")
-    public void theUserSelectNumberOfPassengers(int arg1, int arg2) {
-
+    public void theUserSelectNumberOfPassengers(String arg1, String arg2) {
         actor.attemptsTo(Click.on(INPUT_ORIGIN));
         actor.wasAbleTo
                 (FindFlight.conOrigin("String origin", "String destiny" ));
+
     }
 
     @Then("^verify the number of passengers selected  (\\d+) (\\d+)$")
-    public void verifyTheNumberOfPassengersSelected(int arg1, int arg2) {
+    public void verifyTheNumberOfPassengersSelected(String arg1, String arg2) {
 
     }
 

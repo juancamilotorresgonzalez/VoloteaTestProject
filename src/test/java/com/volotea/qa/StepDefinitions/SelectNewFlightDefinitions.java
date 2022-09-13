@@ -39,8 +39,9 @@ public class SelectNewFlightDefinitions {
     public void findANewOrigin(String origin, String destiny ) {
         actor.attemptsTo(Click.on(INPUT_ORIGIN));
         actor.wasAbleTo
-                (FindFlight.conOrigin("String origin", "String destiny" ));
+                (FindFlight.OriginDestiny("String OriginDestiny" ));
     }
+
     @Then("^verify the minimun passengers$")
     public void verifyTheMinimunPassengers() {
 
